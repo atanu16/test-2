@@ -82,7 +82,7 @@
           <span class="link hide">Teacher</span>
         </a>
       </li>
-     
+
 
 
     <h4 class="hide">Admin Care</h4>
@@ -123,7 +123,7 @@
         <img src="./images/ppl.png" alt="">
         <div class="admin-info">
           <h3>User</h3>
-          
+
           <h5>Admin</h5>
         </div>
       </div>
@@ -166,7 +166,7 @@
               <label for="name">Email *</label>
               <input type="name" class="form-control shadow rounded" id="name" placeholder="Email"  name="email" required>
           </div>
-          
+
           <div class="form-group" style="margin-bottom: 25px;">
               <label for="course">Specialization *</label>
               <select class="form-control form-control-sm shadow rounded" name="Specialization" required>
@@ -178,13 +178,18 @@
                   <option value="Microprocessor">Microprocessor</option>
                   <option value="Computer Network">Computer Network</option>
                   <option value="Data Structure">Data Structure</option>
-                  
-              
-              
-              
+
+
+
+
               </select>
+
+              <div class="form-group" style="margin-bottom: 25px;margin-top: 20px;">
+                  <label for="name">Address *</label>
+                  <input type="name" class="form-control shadow rounded" id="name" placeholder="Adress"  name="adress" required>
+              </div>
           </div>
-    
+
 
       </div>
 
@@ -201,6 +206,8 @@
               <label for="year">Admission Year *</label>
               <input type="year" class="form-control shadow rounded" id="year" placeholder="eg: 2021" name="admissionYear" required>
           </div>
+
+
 
 
       </div>
@@ -222,25 +229,28 @@
                   <option value="Female">Female</option>
                   <option value="Others">Others</option>
                 </select>
+
+
+
           </div>
-          
+
                 </select>
           </div>
           <div class="toast">
             <div class="toast-content">
                 <i class="fas fa-solid fa-check check"></i>
-          
+
                 <div class="message">
                     <span class="text text-1">Success</span>
                     <span class="text text-2">Your changes has been saved</span>
                 </div>
             </div>
             <i class="fa-solid fa-xmark close"></i>
-          
+
             <div class="progress"></div>
           </div>
 
-          <div class="form-group buttonBox" style="margin-left: 500px;margin-top: 30px;";"">
+          <div class="form-group buttonBox" style="margin-left: 500px;margin-top: 30px;";>
               <button type="submit" class="btn btn-dark">Submit</button>
           </div>
       </div>
@@ -268,10 +278,10 @@
 
   <script src="js/dashboard.js"></script>
 
-  
+
   <script src="popup/script.js"></script>
 
- 
+
 
 
 
@@ -279,9 +289,9 @@
 
 
   <script>
-   
+
     var preloader = document.getElementById("Loading");
-  
+
     function myfung(){
       preloader.style.display = 'none';
     };
