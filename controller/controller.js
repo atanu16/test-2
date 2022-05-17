@@ -1,6 +1,6 @@
-const student = require('../models/#');
-const teacher = require('../models/#');
-const admin = require('../models/#');
+const student = require('../models/student_model');
+const teacher = require('../models/teacher_model');
+const admin = require('../models/admin_model');
 
 
 //
@@ -8,23 +8,23 @@ const admin = require('../models/#');
 //
 
 create_student = async(req,res)=>{
-    const uid = req.body.
-    const name = req.body.
-    const dob  = req.body.
-    const course = req.body.
-    const password = req.body.
-    const gender = req.body.
-    const bloodGroup = req.body.
-    const admission_year = req.body.
-    const address = req.body.
-    const email = req.body.
-    const marks = req.body.
-    const grades = req.body.
-    const section = req.body.
-    const cgpa = req.body.
-    const sgpa = req.body.
-    const phone = req.body.
-    const semester = req.body.
+    const uid = req.body.uid
+    const name = req.body.name
+    const dob  = req.body.dob
+    const course = req.body.course
+    const password = req.body.password
+    const gender = req.body.gender
+    const bloodGroup = req.body.bloodGroup
+    const admission_year = req.body.admission_year
+    const address = req.body.address
+    const email = req.body.email
+    const marks = req.body.marks
+    const grades = req.body.grades
+    const section = req.body.section
+    const cgpa = req.body.cgpa
+    const sgpa = req.body.sgpa
+    const phone = req.body.phone
+    const semester = req.body.semester
 
   const newStudent = new student({
     uid : uid ,
@@ -63,20 +63,20 @@ create_student = async(req,res)=>{
 
 
 create_teacher = async(req,res)=>{
-    const eid = req.body.
-    const name = req.body.
-    const dob = req.body.
-    const spelization = req.body.
-    const password = req.body.
-    const gender = req.body.
-    const bloodGroup = req.body.
-    const joiningyear = req.body.
-    const address = req.body.
-    const email = req.body.
-    const marks = req.body.
-    const attendance = req.body.
-    const grades = req.body.
-    const phone = req.body.
+    const eid = req.body.eid
+    const name = req.body.name
+    const dob = req.body.dob
+    const spelization = req.body.spelization
+    const password = req.body.password
+    const gender = req.body.gender
+    const bloodGroup = req.body.bloodGroup
+    const joiningyear = req.body.joiningyear
+    const address = req.body.address
+    const email = req.body.email
+    const marks = req.body.marks
+    const attendance = req.body.attendance
+    const grades = req.body.grades
+    const phone = req.body.phone
 
     const newTeacher = new teacher({
         eid : eid,  
@@ -118,8 +118,8 @@ create_teacher = async(req,res)=>{
 
 
 create_student = async(req,res)=>{
-    const a_id = req.body.
-    const password = req.body.
+    const a_id = req.body.a_id
+    const password = req.body.a_id
 
   
     const newAdmin = new admin({
