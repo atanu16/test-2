@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
-const Student_model = new Schema({
+const student_model = new Schema({
   uid: { type: Number },
   name: { type: String },
   dob: { type: String },
@@ -22,6 +22,6 @@ const Student_model = new Schema({
   semester: { type: String },
 });
 
-const Student = mongoose.model("Student", Student_model);
+const Student = mongoose.model("student", student_model);
 
 module.exports = Student;
