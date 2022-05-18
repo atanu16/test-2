@@ -16,6 +16,6 @@ const teacher_model = new Schema({
   phone: { type: Number },
 });
 
-const teacher = mongoose.model("teacher", teacher_model);
+const Teacher = mongoose.model("teacher", teacher_model);
 
-module.exports = teacher;
+module.exports = Teacher;
