@@ -139,9 +139,4 @@ app.route('/Teacher-admin')
 app.route('/Timetable-admin')
 .get((req,res)=> res.render("admin timetable"))
 
-
-
-
-
-
-    
+module.exports = app;  
