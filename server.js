@@ -8,6 +8,10 @@ app.set('view engine','ejs')
 app.use(express.urlencoded({extended: true}));
 
 
+// Routes
+const routes = require('./routes/route')
+app.use(routes)
+
 app.get('/',(req,res)=>res.render('index'))
 
 
