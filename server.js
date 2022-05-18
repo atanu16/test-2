@@ -11,7 +11,7 @@ app.use(express.json());
 const port = 3000;
 
 // Database connection
-const connection = require('./database.js');
+const connection = require('./db.js');
 
 // Routes
 const routes = require('./routes/route')

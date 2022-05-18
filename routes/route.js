@@ -129,6 +129,7 @@ app.route('/Help-admin')
 
 app.route('/Student-admin')
 .get((req,res)=> res.render("admin student"))
+.post(controller.create_student)
 
 
 
