@@ -1,6 +1,6 @@
 const express = require('express')
 const  https = require('https')
-const controller = require('../controller/Controller')
+const controller = require('../controller/controller')
 
 const app = express()
 
@@ -140,3 +140,12 @@ app.route('/Timetable-admin')
 .get((req,res)=> res.render("admin timetable"))
 
 module.exports = app;  
+
+
+
+
+
+
+
+app.route('*')
+    .get((req,res)=> res.render('Error'))
